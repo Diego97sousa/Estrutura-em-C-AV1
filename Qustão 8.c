@@ -1,37 +1,37 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2, num3;
-    int *ptr1 = &num1;
-    int *ptr2 = &num2;
-    int *ptr3 = &num3;
+    int num1_563, num2_563, num3_563;
+    int *ptr1_563 = &num1_563;
+    int *ptr2_563 = &num2_563;
+    int *ptr3_563 = &num3_563;
     
-    printf("Digite três números: ");
-    scanf("%d %d %d", ptr1, ptr2, ptr3);
+    printf("Questão 8\n\n");
+    printf("Olá, digite três aqui números: ");
+    scanf("%d %d %d", ptr1_563, ptr2_563, ptr3_563);
     
     
-    if (*ptr1 > *ptr2) {
-        int temp = *ptr1;
-        *ptr1 = *ptr2;
-        *ptr2 = temp;
+    if (*ptr1_563 > *ptr2_563) {
+        int temp563 = *ptr1_563;
+        *ptr1_563 = *ptr2_563;
+        *ptr2_563 = temp563;
     }
     
-    if (*ptr2 > *ptr3) {
-        int temp = *ptr2;
-        *ptr2 = *ptr3;
-        *ptr3 = temp;
+    if (*ptr2_563 > *ptr3_563) {
+        int temp563 = *ptr2_563;
+        *ptr2_563 = *ptr3_563;
+        *ptr3_563 = temp563;
     }
     
-    if (*ptr1 > *ptr2) {
-        int temp = *ptr1;
-        *ptr1 = *ptr2;
-        *ptr2 = temp;
+    if (*ptr1_563 > *ptr2_563) {
+        int temp563 = *ptr1_563;
+        *ptr1_563 = *ptr2_563;
+        *ptr2_563 = temp563;
     }
     
     
-    printf("Números em ordem crescente: %d %d %d\n", *ptr1, *ptr2, *ptr3);
-    printf("Endereços de memória dos números: %p %p %p\n", ptr1, ptr2, ptr3);
+    printf("Números em ordem crescente: %d %d %d\n", *ptr1_563, *ptr2_563, *ptr3_563);
+    printf("Endereços de memória dos números: %p %p %p\n", ptr1_563, ptr2_563, ptr3_563);
     
     return 0;
 }
-
