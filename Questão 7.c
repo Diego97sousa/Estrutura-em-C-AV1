@@ -1,32 +1,32 @@
 #include <stdio.h>
 
 int main() {
-    int numeros[12];
-    int pares[6], impares[6];
-    int i, j = 0, k = 0;
+    int numeros563[12];
+    int pares563[6], impares563[6];
+    int i_563, j_563 = 0, k_563 = 0;
     
+    printf("Questão 7\n\n");
     printf("Digite doze números inteiros:\n");
-    for (i = 0; i < 12; i++) {
-        scanf("%d", &numeros[i]);
-        if (numeros[i] % 2 == 0) {  
-            pares[j] = numeros[i];
-            j++;
+    for (i_563 = 0; i_563 < 12; i_563++) {
+        scanf("%d", &numeros563[i_563]);
+        if (numeros563[i_563] % 2 == 0) {  
+            pares563[j_563] = numeros563[i_563];
+            j_563++;
         } else { 
-            impares[k] = numeros[i];
-            k++;
+            impares563[k_563] = numeros563[i_563];
+            k_563++;
         }
     }
     
     printf("Números pares: ");
-    for (i = 0; i < j; i++) {
-        printf("%d ", pares[i]);
+    for (i_563 = 0; i_563 < j_563; i_563++) {
+        printf("%d ", pares563[i_563]);
     }
     printf("\nNúmeros ímpares: ");
-    for (i = 0; i < k; i++) {
-        printf("%d ", impares[i]);
+    for (i_563 = 0; i_563 < k_563; i_563++) {
+        printf("%d ", impares563[i_563]);
     }
     printf("\n");
     
     return 0;
 }
-
